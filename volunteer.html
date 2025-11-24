@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Registration - Join Al Hima Islamic Services</title>
+    <link rel="icon" type="image/png" href="assets/img/LogoAlHima.png">
+
+    <link rel="stylesheet" href="assets/icon/flaticon_charitics.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/splide/splide.min.css">
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/vendor/slim-select/slimselect.css">
+    <link rel="stylesheet" href="assets/vendor/animate-wow/animate.min.css">
+    <link rel="stylesheet" href="assets/vendor/flatpickr/flatpickr.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        .volunteer-form-section {
+            padding: 80px 0;
+            background-color: var(--ul-light); /* Light background for contrast */
+        }
+        .ul-contact-form {
+            padding: 40px;
+            border-radius: 12px;
+        }
+        .form-group {
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="preloader" id="preloader">
+        <div class="magic-circle-container">
+            <div class="magic-circle outer-circle"></div>
+            <div class="magic-circle middle-circle"></div>
+            <div class="magic-circle inner-circle"></div>
+            <div class="magic-symbols">
+                <div class="symbol symbol-1">◊</div>
+                <div class="symbol symbol-2">✧</div>
+                <div class="symbol symbol-3">◈</div>
+                <div class="symbol symbol-4">⬟</div>
+                <div class="symbol symbol-5">◊</div>
+                <div class="symbol symbol-6">✧</div>
+            </div>
+            <div class="logo-container">
+                <img src="assets/img/LogoAlHima.png" alt="Al Hima Logo" class="preloader-logo">
+            </div>
+        </div>
+    </div>
+    <section class="ul-banner ul-banner-inner-page">
+        <div class="container">
+            <div class="ul-heading ul-heading-center text-center wow fadeInUp" data-wow-duration="1s">
+                <h1 class="block-title">Volunteer with Al Hima Islamic Services</h1>
+                <p>Join us in our mission to be a contributing charitable society delivering essential services rooted in the immutable principles of Islam.</p>
+            </div>
+        </div>
+    </section>
+    <section class="volunteer-form-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="ul-contact-form ul-shadow-box wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="ul-heading ul-heading-center">
+                            <h3 class="block-title">Tell Us About Yourself</h3>
+                            <p class="section-lead">Your dedication supports the Muslim community through our comprehensive charitable and developmental services.</p>
+                        </div>
+                        
+                        <form action="submit_volunteer.php" method="POST" id="volunteerForm">
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <label for="fullName">Full Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <label for="email">Email Address <span class="text-danger">*</span></label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <label for="phone">Phone Number <span class="text-danger">*</span></label>
+                                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="e.g., +94 77 123 4567" required>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <label for="city">City/Location in Sri Lanka</label>
+                                    <input type="text" class="form-control" id="city" name="city" placeholder="e.g., Colombo, Kahatowita">
+                                </div>
+                                
+                                <div class="col-12 form-group">
+                                    <label for="areasOfInterest">Areas of Interest (Select all that apply)</label>
+                                    <select class="form-control" id="areasOfInterest" name="areasOfInterest[]" multiple>
+                                        <option value="orphan_care">Orphan & Widow Care Support</option>
+                                        <option value="education">Educational Programs & Tutoring</option>
+                                        <option value="health">Health Initiatives & Medical Aid</option>
+                                        <option value="water_infra">Water Supply & Infrastructure Projects</option>
+                                        <option value="event_management">Event Management / Logistics</option>
+                                        <option value="admin_marketing">Admin Support / Social Media</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12 form-group">
+                                    <label for="availability">Preferred Availability <span class="text-danger">*</span></label>
+                                    <select class="form-control" id="availability" name="availability" required>
+                                        <option value="">-- Select Availability --</option>
+                                        <option value="weekdays">Weekdays (Daytime)</option>
+                                        <option value="weekends">Weekends</option>
+                                        <option value="evenings">Evenings Only</option>
+                                        <option value="flexible">Flexible / Project-based</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12 form-group">
+                                    <label for="experience">Relevant Experience or Skills</label>
+                                    <textarea class="form-control" id="experience" name="experience" rows="4" placeholder="Briefly describe any relevant skills (e.g., teaching, medical, technical, communication)."></textarea>
+                                </div>
+
+                                <div class="col-12 mt-3 text-center">
+                                    <button type="submit" class="ul-primary-btn ul-btn-lg">
+                                        Submit Registration
+                                        <i class="flaticon-fast-forward-double-right-arrows-symbol"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="ul-footer">
+        <div class="ul-container">
+            <div class="ul-footer-top ul-section-spacing-sm">
+                </div>
+            <div class="ul-footer-bottom">
+                <div class="ul-footer-bottom-wrapper">
+                    <p class="copyright">Copyright 2024 © Al Hima Islamic Services. All rights reserved</p>
+                    <div class="ul-footer-bottom-nav">
+                        <a href="#">Terms & Conditions</a> 
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ul-footer-vectors">
+                <img src="assets/img/footer-vector-img.png" alt="Footer Image" class="ul-footer-vector-1">
+            </div>
+        </div>
+    </footer>
+    <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/splide/splide.min.js"></script>
+    <script src="assets/vendor/splide/splide-extension-auto-scroll.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/slim-select/slimselect.min.js"></script>
+    <script src="assets/vendor/animate-wow/wow.min.js"></script>
+    <script src="assets/vendor/splittype/index.min.js"></script>
+    <script src="assets/vendor/mixitup/mixitup.min.js"></script>
+    <script src="assets/vendor/fslightbox/fslightbox.js"></script>
+    <script src="assets/vendor/flatpickr/flatpickr.js"></script>
+
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize SlimSelect for "Areas of Interest"
+            new SlimSelect({
+                select: '#areasOfInterest',
+                placeholder: 'Choose one or more areas',
+                closeOnSelect: false
+            });
+
+            // Initialize WOW.js for animations
+            new WOW().init();
+        });
+    </script>
+</body>
+
+</html>
