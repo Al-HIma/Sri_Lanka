@@ -979,7 +979,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 // --- CONFIGURATION ---
 const whatsappNumber = '94777844536'; // Your WhatsApp Number (No + or spaces)
-const websiteDomain = 'https://www.alhimasrilanka.org'; // Your Website Link
+const websiteDomain = 'https://al-hima.github.io/Sri_Lanka/'; // Your Website Link
 
 // --- ID REFERENCES ---
 const monthlyAmountSelectId = 'monthlyAmountSelectTheme';
