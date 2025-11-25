@@ -1098,7 +1098,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // --- CONFIGURATION (Higher Education) ---
 const HE_whatsappNumber = '94777844536';
-const HE_websiteDomain = 'https://www.alhimasrilanka.org';
+const HE_websiteDomain = 'https://al-hima.github.io/Sri_Lanka/';
 
 // --- ID REFERENCES (Higher Education) ---
 const HE_monthlyAmountSelectId = 'monthlyAmountSelectHigherEd';
