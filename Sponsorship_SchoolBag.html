@@ -308,6 +308,61 @@
                                 </p>
                             </div>
                             <div class="bag-progress-container">
+                                <style>
+                                    .bag-progress-container {
+                                        max-width: 100%;
+                                        background: #ffffff;
+                                        padding: 20px;
+                                        border: 1px solid #e1e1e1;
+                                        border-radius: 8px;
+                                        margin: 20px 0;
+                                        font-family: 'Arial', sans-serif;
+                                    }
+
+                                    .progress-info {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        margin-bottom: 10px;
+                                        font-weight: bold;
+                                        color: #333;
+                                    }
+
+                                    .progress-track {
+                                        width: 100%;
+                                        background-color: #eee;
+                                        border-radius: 20px;
+                                        height: 30px;
+                                        position: relative;
+                                        overflow: hidden;
+                                    }
+
+                                    .progress-fill {
+                                        height: 100%;
+                                        background-color: #28a745;
+                                        /* Green Color for progress */
+                                        color: white;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        font-size: 14px;
+                                        font-weight: bold;
+                                        transition: width 0.6s ease;
+                                       
+                                        width: 45%;
+                                    }
+
+                                    .progress-summary {
+                                        margin-top: 15px;
+                                        text-align: center;
+                                        font-size: 15px;
+                                        color: #555;
+                                    }
+
+                                    .target-highlight {
+                                        color: #d9534f;
+                                        font-weight: bold;
+                                    }
+                                </style>
                                 <div class="progress-info">
                                     <span>Raised: 450 Bags</span> <span>Goal: 1000 Bags</span>
                                 </div>
